@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		817EC836229984E8003E18E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817EC835229984E8003E18E2 /* AppDelegate.swift */; };
+		817EC838229984E8003E18E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817EC837229984E8003E18E2 /* ViewController.swift */; };
+		817EC83B229984E8003E18E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817EC839229984E8003E18E2 /* Main.storyboard */; };
+		817EC83D229984EA003E18E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817EC83C229984EA003E18E2 /* Assets.xcassets */; };
+		817EC840229984EA003E18E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817EC83E229984EA003E18E2 /* LaunchScreen.storyboard */; };
+		817EC8512299883C003E18E2 /* CrossfitDemo-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */; };
+		817EC8522299883C003E18E2 /* CrossfitDemo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */; };
+		817EC8532299883C003E18E2 /* CrossfitDemo-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */; };
+		817EC8542299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */; };
+		817EC8552299883C003E18E2 /* CrossfitDemo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */; };
+		817EC8562299883C003E18E2 /* CrossfitDemo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */; };
+		817EC8572299883C003E18E2 /* CrossfitDemo-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */; };
+		817EC8582299883C003E18E2 /* CrossfitDemo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */; };
+		817EC8592299883C003E18E2 /* CrossfitDemo-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */; };
+		817EC85B2299B4DA003E18E2 /* Capture it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC85A2299B4DA003E18E2 /* Capture it.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		817EC832229984E8003E18E2 /* ChronoFitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChronoFitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		817EC835229984E8003E18E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		817EC837229984E8003E18E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		817EC83A229984E8003E18E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		817EC83C229984EA003E18E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		817EC83F229984EA003E18E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		817EC841229984EA003E18E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Hairline.otf"; sourceTree = "<group>"; };
+		817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Thin.otf"; sourceTree = "<group>"; };
+		817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Demi.otf"; sourceTree = "<group>"; };
+		817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-HeavyItalic.otf"; sourceTree = "<group>"; };
+		817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Light.otf"; sourceTree = "<group>"; };
+		817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Bold.otf"; sourceTree = "<group>"; };
+		817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Black.otf"; sourceTree = "<group>"; };
+		817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Regular.otf"; sourceTree = "<group>"; };
+		817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Heavy.otf"; sourceTree = "<group>"; };
+		817EC85A2299B4DA003E18E2 /* Capture it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Capture it.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		817EC82F229984E8003E18E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		817EC829229984E8003E18E2 = {
+			isa = PBXGroup;
+			children = (
+				817EC834229984E8003E18E2 /* ChronoFitness */,
+				817EC833229984E8003E18E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		817EC833229984E8003E18E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				817EC832229984E8003E18E2 /* ChronoFitness.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		817EC834229984E8003E18E2 /* ChronoFitness */ = {
+			isa = PBXGroup;
+			children = (
+				817EC84722998823003E18E2 /* Font */,
+				817EC835229984E8003E18E2 /* AppDelegate.swift */,
+				817EC837229984E8003E18E2 /* ViewController.swift */,
+				817EC839229984E8003E18E2 /* Main.storyboard */,
+				817EC83C229984EA003E18E2 /* Assets.xcassets */,
+				817EC83E229984EA003E18E2 /* LaunchScreen.storyboard */,
+				817EC841229984EA003E18E2 /* Info.plist */,
+			);
+			path = ChronoFitness;
+			sourceTree = "<group>";
+		};
+		817EC84722998823003E18E2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				817EC85A2299B4DA003E18E2 /* Capture it.ttf */,
+				817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */,
+				817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */,
+				817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */,
+				817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */,
+				817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */,
+				817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */,
+				817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */,
+				817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */,
+				817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		817EC831229984E8003E18E2 /* ChronoFitness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817EC844229984EA003E18E2 /* Build configuration list for PBXNativeTarget "ChronoFitness" */;
+			buildPhases = (
+				817EC82E229984E8003E18E2 /* Sources */,
+				817EC82F229984E8003E18E2 /* Frameworks */,
+				817EC830229984E8003E18E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChronoFitness;
+			productName = ChronoFitness;
+			productReference = 817EC832229984E8003E18E2 /* ChronoFitness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		817EC82A229984E8003E18E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = gaspiz;
+				TargetAttributes = {
+					817EC831229984E8003E18E2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 817EC82D229984E8003E18E2 /* Build configuration list for PBXProject "ChronoFitness" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 817EC829229984E8003E18E2;
+			productRefGroup = 817EC833229984E8003E18E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				817EC831229984E8003E18E2 /* ChronoFitness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		817EC830229984E8003E18E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817EC840229984EA003E18E2 /* LaunchScreen.storyboard in Resources */,
+				817EC8572299883C003E18E2 /* CrossfitDemo-Black.otf in Resources */,
+				817EC83D229984EA003E18E2 /* Assets.xcassets in Resources */,
+				817EC8522299883C003E18E2 /* CrossfitDemo-Thin.otf in Resources */,
+				817EC8542299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf in Resources */,
+				817EC8592299883C003E18E2 /* CrossfitDemo-Heavy.otf in Resources */,
+				817EC8552299883C003E18E2 /* CrossfitDemo-Light.otf in Resources */,
+				817EC83B229984E8003E18E2 /* Main.storyboard in Resources */,
+				817EC8532299883C003E18E2 /* CrossfitDemo-Demi.otf in Resources */,
+				817EC85B2299B4DA003E18E2 /* Capture it.ttf in Resources */,
+				817EC8562299883C003E18E2 /* CrossfitDemo-Bold.otf in Resources */,
+				817EC8582299883C003E18E2 /* CrossfitDemo-Regular.otf in Resources */,
+				817EC8512299883C003E18E2 /* CrossfitDemo-Hairline.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		817EC82E229984E8003E18E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817EC838229984E8003E18E2 /* ViewController.swift in Sources */,
+				817EC836229984E8003E18E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		817EC839229984E8003E18E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				817EC83A229984E8003E18E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		817EC83E229984EA003E18E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				817EC83F229984EA003E18E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		817EC842229984EA003E18E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		817EC843229984EA003E18E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		817EC845229984EA003E18E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75X2B5AS85;
+				INFOPLIST_FILE = ChronoFitness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.gaspiz.ChronoFitness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817EC846229984EA003E18E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75X2B5AS85;
+				INFOPLIST_FILE = ChronoFitness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.gaspiz.ChronoFitness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		817EC82D229984E8003E18E2 /* Build configuration list for PBXProject "ChronoFitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817EC842229984EA003E18E2 /* Debug */,
+				817EC843229984EA003E18E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817EC844229984EA003E18E2 /* Build configuration list for PBXNativeTarget "ChronoFitness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817EC845229984EA003E18E2 /* Debug */,
+				817EC846229984EA003E18E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 817EC82A229984E8003E18E2 /* Project object */;
+}
