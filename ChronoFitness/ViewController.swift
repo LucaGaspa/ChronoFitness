@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.isNavigationBarHidden = true
         
         self.views = [self.clockOneView, self.clockTwoView, self.clockThreeView, self.clockFourView, self.clockFiveView, self.clockSixView]
         
@@ -76,7 +77,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onButtonPressed(_ sender: Any) {
-        
+        let settingsVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewControllerIdentifier") as! SettingsViewController
+        self.present(settingsVC, animated: true, completion: nil)
     }
     
     @objc private func animateLayer(_ sender: UITapGestureRecognizer){

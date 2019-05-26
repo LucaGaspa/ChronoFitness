@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,21 +20,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChronoFitness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1F-MV-eXk">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYi-RH-3Wa">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6RS-MA-Yam">
-                                        <rect key="frame" x="30" y="79" width="142.5" height="142.5"/>
+                                        <rect key="frame" x="30" y="78.999999999999986" width="142.66666666666666" height="142.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-al-gxJ">
-                                                <rect key="frame" x="32.5" y="52" width="78" height="39"/>
+                                                <rect key="frame" x="32.333333333333343" y="51.666666666666657" width="78" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -47,10 +47,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-bw-ZtG">
-                                        <rect key="frame" x="202.5" y="79" width="142.5" height="142.5"/>
+                                        <rect key="frame" x="202.66666666666663" y="78.999999999999986" width="142.33333333333337" height="142.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT7-UR-0eZ">
-                                                <rect key="frame" x="34" y="52" width="75" height="39"/>
+                                                <rect key="frame" x="33.666666666666686" y="51.666666666666657" width="75" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -63,10 +63,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-bJ-Wkh">
-                                        <rect key="frame" x="30" y="251.5" width="142.5" height="142.5"/>
+                                        <rect key="frame" x="30" y="251.66666666666669" width="142.66666666666666" height="142.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcz-e1-TIY">
-                                                <rect key="frame" x="36" y="52" width="71" height="39"/>
+                                                <rect key="frame" x="35.666666666666671" y="51.666666666666629" width="71" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -79,10 +79,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJQ-6u-S7Z">
-                                        <rect key="frame" x="202.5" y="251.5" width="142.5" height="142.5"/>
+                                        <rect key="frame" x="202.66666666666663" y="251.66666666666669" width="142.33333333333337" height="142.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVV-Re-OcH">
-                                                <rect key="frame" x="33" y="52" width="77" height="39"/>
+                                                <rect key="frame" x="32.666666666666686" y="51.666666666666629" width="77" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -95,10 +95,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDQ-X0-f5H">
-                                        <rect key="frame" x="30" y="424" width="147.5" height="147.5"/>
+                                        <rect key="frame" x="30" y="424" width="147.66666666666666" height="147.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0G-Vb-C7U">
-                                                <rect key="frame" x="46.5" y="54.5" width="55" height="39"/>
+                                                <rect key="frame" x="46.333333333333329" y="54.333333333333371" width="55" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -111,10 +111,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoS-hJ-2BT">
-                                        <rect key="frame" x="207.5" y="424" width="147.5" height="147.5"/>
+                                        <rect key="frame" x="207.66666666666663" y="424" width="147.33333333333337" height="147.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFD-xP-Idq">
-                                                <rect key="frame" x="44.5" y="54.5" width="59" height="39"/>
+                                                <rect key="frame" x="44" y="54.333333333333371" width="59" height="39"/>
                                                 <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
                                                 <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -133,7 +133,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPs-41-Uji">
-                                        <rect key="frame" x="167.5" y="587" width="40" height="40"/>
+                                        <rect key="frame" x="167.66666666666666" y="674" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="8AR-jE-boF"/>
                                             <constraint firstAttribute="height" constant="40" id="mwV-UX-mrh"/>
@@ -174,7 +174,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvg-3d-JYr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -214,8 +214,230 @@
             </objects>
             <point key="canvasLocation" x="52.5" y="26.408450704225352"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="wM3-u2-bcx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewControllerIdentifier" id="Y5X-n1-232" customClass="SettingsViewController" customModule="ChronoFitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XEo-ez-v3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gpk-cT-4jJ">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1922"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owy-BR-RBr">
+                                        <rect key="frame" x="15" y="27" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="h5W-30-8Jk"/>
+                                            <constraint firstAttribute="height" constant="25" id="hKe-ap-YIO"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.56340881480000005" blue="0.046844790070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="back-arrow"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="Y5X-n1-232" eventType="touchUpInside" id="0oG-LB-9Be"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzZ-Cr-Bdh">
+                                        <rect key="frame" x="111.66666666666669" y="20" width="152" height="39"/>
+                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="35"/>
+                                        <color key="textColor" red="1" green="0.56340881480000005" blue="0.046844790070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftH-Ps-jCr">
+                                        <rect key="frame" x="0.0" y="69" width="375" height="1853"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eE-4a-Puh">
+                                                <rect key="frame" x="0.0" y="0.0" width="360" height="1654"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-8Y-SB6">
+                                                        <rect key="frame" x="20" y="10" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQq-eK-W6A">
+                                                        <rect key="frame" x="20" y="48" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="doh-ta-eDR"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="cdz-OF-slu"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-RB-uhW">
+                                                        <rect key="frame" x="20" y="284" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbv-HE-GC6">
+                                                        <rect key="frame" x="20" y="322" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="znI-Q4-2NC"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="qoa-7x-PK3"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-aH-lYJ">
+                                                        <rect key="frame" x="20" y="558" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQX-XT-oZp">
+                                                        <rect key="frame" x="20" y="596" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="xNe-6e-21i"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="RTt-Tz-2RM"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCJ-Yi-1j4">
+                                                        <rect key="frame" x="20" y="832" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrS-rJ-cVR">
+                                                        <rect key="frame" x="20" y="870" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="NCm-gs-cVy"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="4hQ-uT-5Mr"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Five" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-U6-KmS">
+                                                        <rect key="frame" x="20" y="1106" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDK-cp-QlB">
+                                                        <rect key="frame" x="20" y="1144" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="EcH-bh-tpf"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="TQb-Vu-NxG"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Six" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISp-Ub-L5h">
+                                                        <rect key="frame" x="20" y="1380" width="320" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Captureit" family="Capture it" pointSize="25"/>
+                                                        <color key="textColor" red="1" green="0.56470588239999997" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lF6-eL-PlA">
+                                                        <rect key="frame" x="20" y="1418" width="320" height="216"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.74919734589999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Y5X-n1-232" id="LaO-aO-U2j"/>
+                                                            <outlet property="delegate" destination="Y5X-n1-232" id="yAj-fS-aGt"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="wQX-XT-oZp" firstAttribute="top" secondItem="Kq9-aH-lYJ" secondAttribute="bottom" constant="10" id="0HX-6S-7xu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lF6-eL-PlA" secondAttribute="bottom" constant="20" id="0Rl-mt-DMq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ISp-Ub-L5h" secondAttribute="trailing" constant="20" id="34J-HC-Z6R"/>
+                                                    <constraint firstItem="yfZ-8Y-SB6" firstAttribute="top" secondItem="5eE-4a-Puh" secondAttribute="top" constant="10" id="5Zk-nh-UyY"/>
+                                                    <constraint firstItem="Kq9-aH-lYJ" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="5oM-0s-405"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NCJ-Yi-1j4" secondAttribute="trailing" constant="20" id="6ap-sq-Rvx"/>
+                                                    <constraint firstItem="bSC-U6-KmS" firstAttribute="top" secondItem="RrS-rJ-cVR" secondAttribute="bottom" constant="20" id="9bI-Dd-5jt"/>
+                                                    <constraint firstItem="zbv-HE-GC6" firstAttribute="top" secondItem="nkI-RB-uhW" secondAttribute="bottom" constant="10" id="Aww-wf-06j"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Kq9-aH-lYJ" secondAttribute="trailing" constant="20" id="C3b-E0-W9u"/>
+                                                    <constraint firstItem="zbv-HE-GC6" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="ClU-kf-0w9"/>
+                                                    <constraint firstItem="jDK-cp-QlB" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="EVY-GW-n5M"/>
+                                                    <constraint firstItem="NCJ-Yi-1j4" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="Ed3-7j-bjx"/>
+                                                    <constraint firstItem="jDK-cp-QlB" firstAttribute="top" secondItem="bSC-U6-KmS" secondAttribute="bottom" constant="10" id="IkY-HG-YYA"/>
+                                                    <constraint firstItem="lF6-eL-PlA" firstAttribute="top" secondItem="ISp-Ub-L5h" secondAttribute="bottom" constant="10" id="MJI-mi-9Sk"/>
+                                                    <constraint firstItem="wQX-XT-oZp" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="OGc-m7-KbZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lF6-eL-PlA" secondAttribute="trailing" constant="20" id="POY-G7-3A9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nkI-RB-uhW" secondAttribute="trailing" constant="20" id="PQR-yf-vrB"/>
+                                                    <constraint firstItem="NCJ-Yi-1j4" firstAttribute="top" secondItem="wQX-XT-oZp" secondAttribute="bottom" constant="20" id="PVP-qP-jip"/>
+                                                    <constraint firstItem="nkI-RB-uhW" firstAttribute="top" secondItem="zQq-eK-W6A" secondAttribute="bottom" constant="20" id="QOs-KZ-nzu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zbv-HE-GC6" secondAttribute="trailing" constant="20" id="QUs-cO-whk"/>
+                                                    <constraint firstItem="Kq9-aH-lYJ" firstAttribute="top" secondItem="zbv-HE-GC6" secondAttribute="bottom" constant="20" id="Rp7-eO-JqA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wQX-XT-oZp" secondAttribute="trailing" constant="20" id="WqB-tb-ZXm"/>
+                                                    <constraint firstItem="ISp-Ub-L5h" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="au3-f4-kjG"/>
+                                                    <constraint firstItem="RrS-rJ-cVR" firstAttribute="top" secondItem="NCJ-Yi-1j4" secondAttribute="bottom" constant="10" id="c2c-3I-BZ3"/>
+                                                    <constraint firstItem="lF6-eL-PlA" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="cTu-V0-AJQ"/>
+                                                    <constraint firstItem="zQq-eK-W6A" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="cag-5l-ICR"/>
+                                                    <constraint firstItem="bSC-U6-KmS" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="d5M-bF-u74"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yfZ-8Y-SB6" secondAttribute="trailing" constant="20" id="e7M-V1-nRB"/>
+                                                    <constraint firstItem="ISp-Ub-L5h" firstAttribute="top" secondItem="jDK-cp-QlB" secondAttribute="bottom" constant="20" id="hPm-zV-edK"/>
+                                                    <constraint firstItem="nkI-RB-uhW" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="k8q-Ti-VPt"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jDK-cp-QlB" secondAttribute="trailing" constant="20" id="la6-4j-Qjj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RrS-rJ-cVR" secondAttribute="trailing" constant="20" id="tB6-Zk-gG7"/>
+                                                    <constraint firstItem="yfZ-8Y-SB6" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="vh5-8P-6Oz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bSC-U6-KmS" secondAttribute="trailing" constant="20" id="xZ0-Rw-8GK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zQq-eK-W6A" secondAttribute="trailing" constant="20" id="yZj-JL-IFC"/>
+                                                    <constraint firstItem="RrS-rJ-cVR" firstAttribute="leading" secondItem="5eE-4a-Puh" secondAttribute="leading" constant="20" id="zOp-Kk-60f"/>
+                                                    <constraint firstItem="zQq-eK-W6A" firstAttribute="top" secondItem="yfZ-8Y-SB6" secondAttribute="bottom" constant="10" id="zel-vo-7eF"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="5eE-4a-Puh" secondAttribute="bottom" id="93E-g3-q5F"/>
+                                            <constraint firstAttribute="trailing" secondItem="5eE-4a-Puh" secondAttribute="trailing" id="fon-qB-Ovl"/>
+                                            <constraint firstItem="5eE-4a-Puh" firstAttribute="top" secondItem="ftH-Ps-jCr" secondAttribute="top" id="jGm-WG-f9a"/>
+                                            <constraint firstItem="5eE-4a-Puh" firstAttribute="leading" secondItem="ftH-Ps-jCr" secondAttribute="leading" id="zq6-zt-Cay"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZzZ-Cr-Bdh" firstAttribute="centerX" secondItem="Gpk-cT-4jJ" secondAttribute="centerX" id="8vh-Dn-d54"/>
+                                    <constraint firstItem="owy-BR-RBr" firstAttribute="centerY" secondItem="ZzZ-Cr-Bdh" secondAttribute="centerY" id="HHe-QJ-ylo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ftH-Ps-jCr" secondAttribute="trailing" id="QOm-UP-3g6"/>
+                                    <constraint firstItem="ftH-Ps-jCr" firstAttribute="leading" secondItem="Gpk-cT-4jJ" secondAttribute="leading" id="b3m-GY-rLU"/>
+                                    <constraint firstAttribute="bottom" secondItem="ftH-Ps-jCr" secondAttribute="bottom" id="dfs-Bv-E9A"/>
+                                    <constraint firstItem="owy-BR-RBr" firstAttribute="leading" secondItem="Gpk-cT-4jJ" secondAttribute="leading" constant="15" id="k9H-33-0nA"/>
+                                    <constraint firstItem="ZzZ-Cr-Bdh" firstAttribute="top" secondItem="Gpk-cT-4jJ" secondAttribute="top" constant="20" id="pHs-oP-ePY"/>
+                                    <constraint firstItem="ftH-Ps-jCr" firstAttribute="top" secondItem="ZzZ-Cr-Bdh" secondAttribute="bottom" constant="10" id="y19-O1-Ihd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-0x-3ZQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HR-5h-Egd">
+                                <rect key="frame" x="0.0" y="1966" width="375" height="34"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J2x-A7-sCa" firstAttribute="trailing" secondItem="Gpk-cT-4jJ" secondAttribute="trailing" id="0IW-hJ-AfL"/>
+                            <constraint firstItem="1HR-5h-Egd" firstAttribute="top" secondItem="Gpk-cT-4jJ" secondAttribute="bottom" id="9hs-tW-LLo"/>
+                            <constraint firstItem="1HR-5h-Egd" firstAttribute="leading" secondItem="XEo-ez-v3q" secondAttribute="leading" id="KzX-Ve-2Cx"/>
+                            <constraint firstAttribute="bottom" secondItem="1HR-5h-Egd" secondAttribute="bottom" id="Qxq-ef-J85"/>
+                            <constraint firstItem="AjU-0x-3ZQ" firstAttribute="leading" secondItem="XEo-ez-v3q" secondAttribute="leading" id="ZxI-Pz-aiO"/>
+                            <constraint firstItem="J2x-A7-sCa" firstAttribute="top" secondItem="AjU-0x-3ZQ" secondAttribute="bottom" id="aM2-fV-Rb2"/>
+                            <constraint firstItem="AjU-0x-3ZQ" firstAttribute="top" secondItem="XEo-ez-v3q" secondAttribute="top" id="aMe-4M-P5O"/>
+                            <constraint firstItem="Gpk-cT-4jJ" firstAttribute="top" secondItem="AjU-0x-3ZQ" secondAttribute="bottom" id="c1W-sY-wLx"/>
+                            <constraint firstAttribute="trailing" secondItem="AjU-0x-3ZQ" secondAttribute="trailing" id="dc7-kP-mNM"/>
+                            <constraint firstItem="Gpk-cT-4jJ" firstAttribute="leading" secondItem="J2x-A7-sCa" secondAttribute="leading" id="hII-yl-k7k"/>
+                            <constraint firstItem="1HR-5h-Egd" firstAttribute="top" secondItem="J2x-A7-sCa" secondAttribute="bottom" id="xqr-Gm-hjO"/>
+                            <constraint firstAttribute="trailing" secondItem="1HR-5h-Egd" secondAttribute="trailing" id="y5l-be-ieq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J2x-A7-sCa"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="clockFivePicker" destination="jDK-cp-QlB" id="aax-e6-cUt"/>
+                        <outlet property="clockFourPicker" destination="RrS-rJ-cVR" id="XvL-zE-SO9"/>
+                        <outlet property="clockOnePicker" destination="zQq-eK-W6A" id="mac-cp-EtP"/>
+                        <outlet property="clockSixPicker" destination="lF6-eL-PlA" id="poR-a4-NfP"/>
+                        <outlet property="clockThreePicker" destination="wQX-XT-oZp" id="TNK-le-Omt"/>
+                        <outlet property="clockTwoPicker" destination="zbv-HE-GC6" id="lXp-gj-VAz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTv-Ds-ta3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="25.862068965517242"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="settings" width="75" height="75"/>
+        <image name="back-arrow" width="17.333333969116211" height="17.333333969116211"/>
+        <image name="settings" width="166.66667175292969" height="166.66667175292969"/>
     </resources>
 </document>
