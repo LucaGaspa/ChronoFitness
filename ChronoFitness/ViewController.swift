@@ -25,12 +25,29 @@ class ViewController: UIViewController {
     let borderWidth = CGFloat(integerLiteral: 15)
     
     var shapeLayers: [CAShapeLayer] = []
+    
+    // tap gestures
     var tapOne: UITapGestureRecognizer?
     var tapTwo: UITapGestureRecognizer?
     var tapThree: UITapGestureRecognizer?
     var tapFour: UITapGestureRecognizer?
     var tapFive: UITapGestureRecognizer?
     var tapSix: UITapGestureRecognizer?
+    
+    // timers
+    var timerOne:Timer?
+    var timeLeftOne = 0
+    var timerTwo:Timer?
+    var timeLeftTwo = 0
+    var timerThree:Timer?
+    var timeLeftThree = 0
+    var timerFour:Timer?
+    var timeLeftFour = 0
+    var timerFive:Timer?
+    var timeLeftFive = 0
+    var timerSix:Timer?
+    var timeLeftSix = 0
+    
     
     var views: [UIView]?
     
@@ -71,60 +88,136 @@ class ViewController: UIViewController {
         var index = 0
         switch sender {
         case self.tapOne:
-            basicAnimation.duration = 30
-            self.shapeLayers[0].add(basicAnimation, forKey: "urSoBasic")
             index = 0
-            timeLeft = 30
+            timeLeftOne = 30
+            if timerOne != nil {
+                self.clockOneLabel.text = timeLeftOne.formatToString()
+                timerOne?.invalidate()
+                timerOne = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftOne)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerOne = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
+            }
         case self.tapTwo:
-            basicAnimation.duration = 60
-            self.shapeLayers[1].add(basicAnimation, forKey: "urSoBasic")
             index = 1
-            timeLeft = 60
+            timeLeftTwo = 60
+            if timerTwo != nil {
+                self.clockTwoLabel.text = timeLeftTwo.formatToString()
+                timerTwo?.invalidate()
+                timerTwo = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftTwo)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerTwo = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
+            }
         case self.tapThree:
-            basicAnimation.duration = 90
-            self.shapeLayers[2].add(basicAnimation, forKey: "urSoBasic")
             index = 2
-            timeLeft = 90
+            timeLeftThree = 90
+            if timerThree != nil {
+                self.clockThreeLabel.text = timeLeftThree.formatToString()
+                timerThree?.invalidate()
+                timerThree = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftThree)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerThree = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
+            }
         case self.tapFour:
-            basicAnimation.duration = 120
-            self.shapeLayers[3].add(basicAnimation, forKey: "urSoBasic")
             index = 3
-            timeLeft = 120
+            timeLeftFour = 120
+            if timerFour != nil {
+                self.clockFourLabel.text = timeLeftFour.formatToString()
+                timerFour?.invalidate()
+                timerFour = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftFour)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerFour = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
+            }
         case self.tapFive:
-            basicAnimation.duration = 150
-            self.shapeLayers[4].add(basicAnimation, forKey: "urSoBasic")
             index = 4
-            timeLeft = 150
+            timeLeftFive = 150
+            if timerFive != nil {
+                self.clockFiveLabel.text = timeLeftFive.formatToString()
+                timerFive?.invalidate()
+                timerFive = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftFive)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerFive = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
+            }
         case self.tapSix:
-            basicAnimation.duration = 180
-            self.shapeLayers[5].add(basicAnimation, forKey: "urSoBasic")
             index = 5
-            timeLeft = 180
+            timeLeftSix = 180
+            if timerSix != nil {
+                self.clockSixLabel.text = timeLeftSix.formatToString()
+                timerSix?.invalidate()
+                timerSix = nil
+                self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
+            }else{
+                basicAnimation.duration = CFTimeInterval(timeLeftSix)
+                self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timerSix = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires(sender:)), userInfo: index, repeats: true)
+            }
         default:
             break
         }
-        
-        if let timer = timer {
-            timer.invalidate()
-        }
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: 0, repeats: true)
     }
     
-    var timer:Timer?
-    var timeLeft = 0
-    @objc private func onTimerFires() {
-        timeLeft -= 1
+    @objc private func onTimerFires(sender: Timer) {
         
-        switch timer?.userInfo as? Int {
-        case 0:
-            self.clockOneLabel.text = "\(timeLeft)"
+        switch sender {
+        case timerOne:
+            timeLeftOne -= 1
+            self.clockOneLabel.text = timeLeftOne.formatToString()
+        case timerTwo:
+            timeLeftTwo -= 1
+            self.clockTwoLabel.text = timeLeftTwo.formatToString()
+        case timerThree:
+            timeLeftThree -= 1
+            self.clockThreeLabel.text = timeLeftThree.formatToString()
+        case timerFour:
+            timeLeftFour -= 1
+            self.clockFourLabel.text = timeLeftFour.formatToString()
+        case timerFive:
+            timeLeftFive -= 1
+            self.clockFiveLabel.text = timeLeftFive.formatToString()
+        case timerSix:
+            timeLeftSix -= 1
+            self.clockSixLabel.text = timeLeftSix.formatToString()
         default:
             break
         }
         
-        if timeLeft <= 0 {
-            timer?.invalidate()
-            timer = nil
+        if timeLeftOne <= 0 {
+            timerOne?.invalidate()
+            timerOne = nil
+        }
+        if timeLeftTwo <= 0 {
+            timerTwo?.invalidate()
+            timerTwo = nil
+        }
+        if timeLeftThree <= 0 {
+            timerThree?.invalidate()
+            timerThree = nil
+        }
+        if timeLeftFour <= 0 {
+            timerFour?.invalidate()
+            timerFour = nil
+        }
+        if timeLeftFive <= 0 {
+            timerFive?.invalidate()
+            timerFive = nil
+        }
+        if timeLeftSix <= 0 {
+            timerSix?.invalidate()
+            timerSix = nil
         }
     }
     
@@ -143,14 +236,13 @@ class ViewController: UIViewController {
             view.layer.addSublayer(shapeLayers[x])
             view.layoutIfNeeded()
         }
-        // One
-        
-        
-        
-        
-        
-        
-        
     }
 }
 
+extension Int {
+    func formatToString() -> String {
+        let minutes = self / 60
+        let seconds = self % 60
+        return "\(String(format: "%02d", minutes)):\(String(format: "%02d", seconds))"
+    }
+}
