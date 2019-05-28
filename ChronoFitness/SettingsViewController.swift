@@ -20,48 +20,142 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // TODO:: set pickers
-        self.clockOnePicker.selectRow(0, inComponent: 0, animated: true)
-        self.clockOnePicker.selectRow(0, inComponent: 1, animated: true)
+        let defaults = UserDefaults.standard
+        let clockOnePref = defaults.integer(forKey: "\(AppDelegate.clockKey)1")
+        if clockOnePref != 0 {
+            let minutes = clockOnePref / 60
+            let seconds = clockOnePref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }
         
         self.currentButton = self.clockOneButton
         self.highlightButton(current: self.currentButton!)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        // TODO :: save preferences
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func clockOneButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 1
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockOnePref = defaults.integer(forKey: "\(AppDelegate.clockKey)1")
+        if clockOnePref != 0 {
+            self.minutes = clockOnePref / 60
+            self.seconds = clockOnePref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(30, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(0, inComponent: 0, animated: true)
+            self.minutes = 0
+            self.seconds = 30
+        }
     }
     @IBAction func clockTwoButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 2
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockTwoPref = defaults.integer(forKey: "\(AppDelegate.clockKey)2")
+        if clockTwoPref != 0 {
+            self.minutes = clockTwoPref / 60
+            self.seconds = clockTwoPref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(0, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(1, inComponent: 0, animated: true)
+            self.minutes = 1
+            self.seconds = 0
+        }
     }
     @IBAction func clockThreeButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 3
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockThreePref = defaults.integer(forKey: "\(AppDelegate.clockKey)3")
+        if clockThreePref != 0 {
+            self.minutes = clockThreePref / 60
+            self.seconds = clockThreePref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(30, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(1, inComponent: 0, animated: true)
+            self.minutes = 1
+            self.seconds = 30
+        }
     }
     @IBAction func clockFourButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 4
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockFourPref = defaults.integer(forKey: "\(AppDelegate.clockKey)4")
+        if clockFourPref != 0 {
+            self.minutes = clockFourPref / 60
+            self.seconds = clockFourPref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(0, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(2, inComponent: 0, animated: true)
+            self.minutes = 2
+            self.seconds = 0
+        }
     }
     @IBAction func clockFiveButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 5
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockFivePref = defaults.integer(forKey: "\(AppDelegate.clockKey)5")
+        if clockFivePref != 0 {
+            self.minutes = clockFivePref / 60
+            self.seconds = clockFivePref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(30, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(2, inComponent: 0, animated: true)
+            self.minutes = 2
+            self.seconds = 30
+        }
     }
     @IBAction func clockSixButtonPressed(_ sender: UIButton) {
         self.normalizeButton(current: self.currentButton!)
         self.currentButton = sender
+        self.currentClock = 6
         self.highlightButton(current: self.currentButton!)
+        
+        let defaults = UserDefaults.standard
+        let clockSixPref = defaults.integer(forKey: "\(AppDelegate.clockKey)6")
+        if clockSixPref != 0 {
+            self.minutes = clockSixPref / 60
+            self.seconds = clockSixPref % 60
+            self.clockOnePicker.selectRow(seconds, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(minutes, inComponent: 0, animated: true)
+        }else{
+            self.clockOnePicker.selectRow(0, inComponent: 1, animated: true)
+            self.clockOnePicker.selectRow(3, inComponent: 0, animated: true)
+            self.minutes = 3
+            self.seconds = 0
+        }
     }
     
     private func highlightButton(current: UIButton) {
@@ -94,7 +188,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         case 0:
             return 29
         case 1:
-            return 59
+            return 60
         default:
             return 0
         }
@@ -108,9 +202,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         switch component {
         case 0:
-            return row == 0 ? "\(row+1) Minute" : "\(row+1) Minutes"
+            return row == 0 ? "\(row) Minute" : "\(row) Minutes"
         case 1:
-            return row == 0 ? "\(row+1) Second" : "\(row+1) Seconds"
+            return row == 0 ? "\(row) Second" : "\(row) Seconds"
         default:
             return ""
         }
@@ -125,6 +219,24 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         default:
             break;
         }
+        
+        let defaults = UserDefaults.standard
+        
+        switch currentClock {
+        case 1:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)1")
+        case 2:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)2")
+        case 3:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)3")
+        case 4:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)4")
+        case 5:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)5")
+        case 6:
+            defaults.set((minutes*60)+seconds, forKey: "\(AppDelegate.clockKey)6")
+        default:
+            return
+        }
     }
-
 }

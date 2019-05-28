@@ -10,7 +10,9 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    static let clockKey = "clock_preference_"
+    
     var window: UIWindow?
 
 

@@ -36,16 +36,27 @@ class ViewController: UIViewController {
     
     // timers
     var timerOne:Timer?
+    var clockOnePref = 30
     var timeLeftOne = 30
+    
     var timerTwo:Timer?
+    var clockTwoPref = 30
     var timeLeftTwo = 60
+    
     var timerThree:Timer?
+    var clockThreePref = 30
     var timeLeftThree = 90
+    
     var timerFour:Timer?
+    var clockFourPref = 30
     var timeLeftFour = 120
+    
     var timerFive:Timer?
+    var clockFivePref = 30
     var timeLeftFive = 150
+    
     var timerSix:Timer?
+    var clockSixPref = 30
     var timeLeftSix = 180
     
     
@@ -76,7 +87,61 @@ class ViewController: UIViewController {
         self.clockSixView.addGestureRecognizer(tapSix!)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        // retrieve preferences
+        let defaults = UserDefaults.standard
+        let clockOnePref = defaults.integer(forKey: "\(AppDelegate.clockKey)1")
+        if clockOnePref != 0 {
+            self.clockOneLabel.text = clockOnePref.formatToString()
+            self.clockOnePref = clockOnePref
+            self.timeLeftOne = clockOnePref
+        }
+        let clockTwoPref = defaults.integer(forKey: "\(AppDelegate.clockKey)2")
+        if clockTwoPref != 0 {
+            self.clockTwoLabel.text = clockTwoPref.formatToString()
+            self.clockTwoPref = clockTwoPref
+            self.timeLeftTwo = clockTwoPref
+        }
+        let clockThreePref = defaults.integer(forKey: "\(AppDelegate.clockKey)3")
+        if clockThreePref != 0 {
+            self.clockThreeLabel.text = clockThreePref.formatToString()
+            self.clockThreePref = clockThreePref
+            self.timeLeftThree = clockThreePref
+        }
+        let clockFourPref = defaults.integer(forKey: "\(AppDelegate.clockKey)4")
+        if clockFourPref != 0 {
+            self.clockFourLabel.text = clockFourPref.formatToString()
+            self.clockFourPref = clockFourPref
+            self.timeLeftFour = clockFourPref
+        }
+        let clockFivePref = defaults.integer(forKey: "\(AppDelegate.clockKey)5")
+        if clockFivePref != 0 {
+            self.clockFiveLabel.text = clockFivePref.formatToString()
+            self.clockFivePref = clockFivePref
+            self.timeLeftFive = clockFivePref
+        }
+        let clockSixPref = defaults.integer(forKey: "\(AppDelegate.clockKey)6")
+        if clockSixPref != 0 {
+            self.clockSixLabel.text = clockFivePref.formatToString()
+            self.clockSixPref = clockSixPref
+            self.timeLeftSix = clockSixPref
+        }
+    }
+    
     @IBAction func onButtonPressed(_ sender: Any) {
+        self.timerOne?.invalidate()
+        self.shapeLayers[0].removeAnimation(forKey: "urSoBasic")
+        self.timerTwo?.invalidate()
+        self.shapeLayers[1].removeAnimation(forKey: "urSoBasic")
+        self.timerThree?.invalidate()
+        self.shapeLayers[2].removeAnimation(forKey: "urSoBasic")
+        self.timerFour?.invalidate()
+        self.shapeLayers[3].removeAnimation(forKey: "urSoBasic")
+        self.timerFive?.invalidate()
+        self.shapeLayers[4].removeAnimation(forKey: "urSoBasic")
+        self.timerSix?.invalidate()
+        self.shapeLayers[5].removeAnimation(forKey: "urSoBasic")
+        
         let settingsVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewControllerIdentifier") as! SettingsViewController
         self.present(settingsVC, animated: true, completion: nil)
     }
@@ -91,8 +156,8 @@ class ViewController: UIViewController {
         switch sender {
         case self.tapOne:
             index = 0
-            let isEnded = timerOne != nil || timeLeftOne == 0
-            timeLeftOne = 30
+            let isEnded = timerOne != nil || timeLeftOne <= 0
+            timeLeftOne = clockOnePref
             if isEnded {
                 self.clockOneLabel.text = (timeLeftOne).formatToString()
                 timerOne?.invalidate()
@@ -107,8 +172,8 @@ class ViewController: UIViewController {
             }
         case self.tapTwo:
             index = 1
-            let isEnded = timerTwo != nil || timeLeftTwo == 0
-            timeLeftTwo = 60
+            let isEnded = timerTwo != nil || timeLeftTwo <= 0
+            timeLeftTwo = clockTwoPref
             if isEnded {
                 self.clockTwoLabel.text = timeLeftTwo.formatToString()
                 timerTwo?.invalidate()
@@ -123,8 +188,8 @@ class ViewController: UIViewController {
             }
         case self.tapThree:
             index = 2
-            let isEnded = timerThree != nil || timeLeftThree == 0
-            timeLeftThree = 90
+            let isEnded = timerThree != nil || timeLeftThree <= 0
+            timeLeftThree = clockThreePref
             if isEnded {
                 self.clockThreeLabel.text = timeLeftThree.formatToString()
                 timerThree?.invalidate()
@@ -139,8 +204,8 @@ class ViewController: UIViewController {
             }
         case self.tapFour:
             index = 3
-            let isEnded = timerFour != nil || timeLeftFour == 0
-            timeLeftFour = 120
+            let isEnded = timerFour != nil || timeLeftFour <= 0
+            timeLeftFour = clockFourPref
             if isEnded {
                 self.clockFourLabel.text = timeLeftFour.formatToString()
                 timerFour?.invalidate()
@@ -155,8 +220,8 @@ class ViewController: UIViewController {
             }
         case self.tapFive:
             index = 4
-            let isEnded = timerFive != nil || timeLeftFive == 0
-            timeLeftFive = 150
+            let isEnded = timerFive != nil || timeLeftFive <= 0
+            timeLeftFive = clockFivePref
             if isEnded {
                 self.clockFiveLabel.text = timeLeftFive.formatToString()
                 timerFive?.invalidate()
@@ -171,8 +236,8 @@ class ViewController: UIViewController {
             }
         case self.tapSix:
             index = 5
-            let isEnded = timerSix != nil || timeLeftSix == 0
-            timeLeftSix = 180
+            let isEnded = timerSix != nil || timeLeftSix <= 0
+            timeLeftSix = clockSixPref
             if isEnded {
                 self.clockSixLabel.text = timeLeftSix.formatToString()
                 timerSix?.invalidate()
