@@ -13,15 +13,6 @@
 		817EC83B229984E8003E18E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817EC839229984E8003E18E2 /* Main.storyboard */; };
 		817EC83D229984EA003E18E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817EC83C229984EA003E18E2 /* Assets.xcassets */; };
 		817EC840229984EA003E18E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817EC83E229984EA003E18E2 /* LaunchScreen.storyboard */; };
-		817EC8512299883C003E18E2 /* CrossfitDemo-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */; };
-		817EC8522299883C003E18E2 /* CrossfitDemo-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */; };
-		817EC8532299883C003E18E2 /* CrossfitDemo-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */; };
-		817EC8542299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */; };
-		817EC8552299883C003E18E2 /* CrossfitDemo-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */; };
-		817EC8562299883C003E18E2 /* CrossfitDemo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */; };
-		817EC8572299883C003E18E2 /* CrossfitDemo-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */; };
-		817EC8582299883C003E18E2 /* CrossfitDemo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */; };
-		817EC8592299883C003E18E2 /* CrossfitDemo-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */; };
 		817EC85B2299B4DA003E18E2 /* Capture it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 817EC85A2299B4DA003E18E2 /* Capture it.ttf */; };
 /* End PBXBuildFile section */
 
@@ -34,15 +25,6 @@
 		817EC83C229984EA003E18E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817EC83F229984EA003E18E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817EC841229984EA003E18E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Hairline.otf"; sourceTree = "<group>"; };
-		817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Thin.otf"; sourceTree = "<group>"; };
-		817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Demi.otf"; sourceTree = "<group>"; };
-		817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-HeavyItalic.otf"; sourceTree = "<group>"; };
-		817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Light.otf"; sourceTree = "<group>"; };
-		817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Bold.otf"; sourceTree = "<group>"; };
-		817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Black.otf"; sourceTree = "<group>"; };
-		817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Regular.otf"; sourceTree = "<group>"; };
-		817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CrossfitDemo-Heavy.otf"; sourceTree = "<group>"; };
 		817EC85A2299B4DA003E18E2 /* Capture it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Capture it.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,15 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				817EC85A2299B4DA003E18E2 /* Capture it.ttf */,
-				817EC84E2299883C003E18E2 /* CrossfitDemo-Black.otf */,
-				817EC84D2299883C003E18E2 /* CrossfitDemo-Bold.otf */,
-				817EC84A2299883C003E18E2 /* CrossfitDemo-Demi.otf */,
-				817EC8482299883C003E18E2 /* CrossfitDemo-Hairline.otf */,
-				817EC8502299883C003E18E2 /* CrossfitDemo-Heavy.otf */,
-				817EC84B2299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf */,
-				817EC84C2299883C003E18E2 /* CrossfitDemo-Light.otf */,
-				817EC84F2299883C003E18E2 /* CrossfitDemo-Regular.otf */,
-				817EC8492299883C003E18E2 /* CrossfitDemo-Thin.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -165,18 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				817EC840229984EA003E18E2 /* LaunchScreen.storyboard in Resources */,
-				817EC8572299883C003E18E2 /* CrossfitDemo-Black.otf in Resources */,
 				817EC83D229984EA003E18E2 /* Assets.xcassets in Resources */,
-				817EC8522299883C003E18E2 /* CrossfitDemo-Thin.otf in Resources */,
-				817EC8542299883C003E18E2 /* CrossfitDemo-HeavyItalic.otf in Resources */,
-				817EC8592299883C003E18E2 /* CrossfitDemo-Heavy.otf in Resources */,
-				817EC8552299883C003E18E2 /* CrossfitDemo-Light.otf in Resources */,
 				817EC83B229984E8003E18E2 /* Main.storyboard in Resources */,
-				817EC8532299883C003E18E2 /* CrossfitDemo-Demi.otf in Resources */,
 				817EC85B2299B4DA003E18E2 /* Capture it.ttf in Resources */,
-				817EC8562299883C003E18E2 /* CrossfitDemo-Bold.otf in Resources */,
-				817EC8582299883C003E18E2 /* CrossfitDemo-Regular.otf in Resources */,
-				817EC8512299883C003E18E2 /* CrossfitDemo-Hairline.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

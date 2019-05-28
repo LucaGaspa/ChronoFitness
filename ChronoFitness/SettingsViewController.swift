@@ -10,31 +10,70 @@ import UIKit
 
 class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var clockOnePicker: UIPickerView!
-    @IBOutlet weak var clockTwoPicker: UIPickerView!
-    @IBOutlet weak var clockThreePicker: UIPickerView!
-    @IBOutlet weak var clockFourPicker: UIPickerView!
-    @IBOutlet weak var clockFivePicker: UIPickerView!
-    @IBOutlet weak var clockSixPicker: UIPickerView!
-    
+    @IBOutlet weak var clockOneButton: UIButton!
     
     var minutes = 0
     var seconds = 0
+    var currentClock: Int = 1
+    var currentButton: UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // TODO:: set pickers
-        self.clockOnePicker.selectRow(1, inComponent: 0, animated: true)
-        self.clockTwoPicker.selectRow(1, inComponent: 0, animated: true)
-        self.clockThreePicker.selectRow(1, inComponent: 0, animated: true)
-        self.clockFourPicker.selectRow(1, inComponent: 0, animated: true)
-        self.clockFivePicker.selectRow(1, inComponent: 0, animated: true)
-        self.clockSixPicker.selectRow(1, inComponent: 0, animated: true)
+        self.clockOnePicker.selectRow(0, inComponent: 0, animated: true)
+        self.clockOnePicker.selectRow(0, inComponent: 1, animated: true)
+        
+        self.currentButton = self.clockOneButton
+        self.highlightButton(current: self.currentButton!)
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         // TODO :: save preferences
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func clockOneButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    @IBAction func clockTwoButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    @IBAction func clockThreeButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    @IBAction func clockFourButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    @IBAction func clockFiveButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    @IBAction func clockSixButtonPressed(_ sender: UIButton) {
+        self.normalizeButton(current: self.currentButton!)
+        self.currentButton = sender
+        self.highlightButton(current: self.currentButton!)
+    }
+    
+    private func highlightButton(current: UIButton) {
+        current.layer.cornerRadius = 22
+        current.layer.borderWidth = 3
+        current.layer.borderColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0.75).cgColor
+    }
+    
+    private func normalizeButton(current: UIButton) {
+        current.layer.cornerRadius = 0
+        current.layer.borderWidth = 0
+        current.layer.borderColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
     }
     /*
     // MARK: - Navigation
@@ -53,9 +92,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
-            return 30
+            return 29
         case 1:
-            return 60
+            return 59
         default:
             return 0
         }
@@ -69,9 +108,9 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         switch component {
         case 0:
-            return row == 1 ? "\(row) Minute" : "\(row) Minutes"
+            return row == 0 ? "\(row+1) Minute" : "\(row+1) Minutes"
         case 1:
-            return row == 1 ? "\(row) Second" : "\(row) Seconds"
+            return row == 0 ? "\(row+1) Second" : "\(row+1) Seconds"
         default:
             return ""
         }

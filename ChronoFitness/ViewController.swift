@@ -93,13 +93,15 @@ class ViewController: UIViewController {
             index = 0
             timeLeftOne = 30
             if timerOne != nil {
-                self.clockOneLabel.text = timeLeftOne.formatToString()
+                self.clockOneLabel.text = (timeLeftOne).formatToString()
                 timerOne?.invalidate()
                 timerOne = nil
                 self.shapeLayers[index].removeAnimation(forKey: "urSoBasic")
             }else{
-                basicAnimation.duration = CFTimeInterval(timeLeftOne)
+                basicAnimation.duration = CFTimeInterval(timeLeftOne-1)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftOne -= 1
+                self.clockOneLabel.text = timeLeftOne.formatToString()
                 timerOne = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
             }
         case self.tapTwo:
@@ -113,6 +115,8 @@ class ViewController: UIViewController {
             }else{
                 basicAnimation.duration = CFTimeInterval(timeLeftTwo)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftTwo -= 1
+                self.clockTwoLabel.text = timeLeftTwo.formatToString()
                 timerTwo = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
             }
         case self.tapThree:
@@ -126,6 +130,8 @@ class ViewController: UIViewController {
             }else{
                 basicAnimation.duration = CFTimeInterval(timeLeftThree)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftThree -= 1
+                self.clockThreeLabel.text = timeLeftThree.formatToString()
                 timerThree = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
             }
         case self.tapFour:
@@ -139,6 +145,8 @@ class ViewController: UIViewController {
             }else{
                 basicAnimation.duration = CFTimeInterval(timeLeftFour)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftFour -= 1
+                self.clockFourLabel.text = timeLeftFour.formatToString()
                 timerFour = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
             }
         case self.tapFive:
@@ -152,6 +160,8 @@ class ViewController: UIViewController {
             }else{
                 basicAnimation.duration = CFTimeInterval(timeLeftFive)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftFive -= 1
+                self.clockFiveLabel.text = timeLeftFive.formatToString()
                 timerFive = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires), userInfo: index, repeats: true)
             }
         case self.tapSix:
@@ -165,6 +175,8 @@ class ViewController: UIViewController {
             }else{
                 basicAnimation.duration = CFTimeInterval(timeLeftSix)
                 self.shapeLayers[index].add(basicAnimation, forKey: "urSoBasic")
+                timeLeftSix -= 1
+                self.clockSixLabel.text = timeLeftSix.formatToString()
                 timerSix = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(onTimerFires(sender:)), userInfo: index, repeats: true)
             }
         default:
