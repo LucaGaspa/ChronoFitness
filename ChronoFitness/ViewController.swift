@@ -36,17 +36,17 @@ class ViewController: UIViewController {
     
     // timers
     var timerOne:Timer?
-    var timeLeftOne = 0
+    var timeLeftOne = 30
     var timerTwo:Timer?
-    var timeLeftTwo = 0
+    var timeLeftTwo = 60
     var timerThree:Timer?
-    var timeLeftThree = 0
+    var timeLeftThree = 90
     var timerFour:Timer?
-    var timeLeftFour = 0
+    var timeLeftFour = 120
     var timerFive:Timer?
-    var timeLeftFive = 0
+    var timeLeftFive = 150
     var timerSix:Timer?
-    var timeLeftSix = 0
+    var timeLeftSix = 180
     
     
     var views: [UIView]?
@@ -91,8 +91,9 @@ class ViewController: UIViewController {
         switch sender {
         case self.tapOne:
             index = 0
+            let isEnded = timerOne != nil || timeLeftOne == 0
             timeLeftOne = 30
-            if timerOne != nil {
+            if isEnded {
                 self.clockOneLabel.text = (timeLeftOne).formatToString()
                 timerOne?.invalidate()
                 timerOne = nil
@@ -106,8 +107,9 @@ class ViewController: UIViewController {
             }
         case self.tapTwo:
             index = 1
+            let isEnded = timerTwo != nil || timeLeftTwo == 0
             timeLeftTwo = 60
-            if timerTwo != nil {
+            if isEnded {
                 self.clockTwoLabel.text = timeLeftTwo.formatToString()
                 timerTwo?.invalidate()
                 timerTwo = nil
@@ -121,8 +123,9 @@ class ViewController: UIViewController {
             }
         case self.tapThree:
             index = 2
+            let isEnded = timerThree != nil || timeLeftThree == 0
             timeLeftThree = 90
-            if timerThree != nil {
+            if isEnded {
                 self.clockThreeLabel.text = timeLeftThree.formatToString()
                 timerThree?.invalidate()
                 timerThree = nil
@@ -136,8 +139,9 @@ class ViewController: UIViewController {
             }
         case self.tapFour:
             index = 3
+            let isEnded = timerFour != nil || timeLeftFour == 0
             timeLeftFour = 120
-            if timerFour != nil {
+            if isEnded {
                 self.clockFourLabel.text = timeLeftFour.formatToString()
                 timerFour?.invalidate()
                 timerFour = nil
@@ -151,8 +155,9 @@ class ViewController: UIViewController {
             }
         case self.tapFive:
             index = 4
+            let isEnded = timerFive != nil || timeLeftFive == 0
             timeLeftFive = 150
-            if timerFive != nil {
+            if isEnded {
                 self.clockFiveLabel.text = timeLeftFive.formatToString()
                 timerFive?.invalidate()
                 timerFive = nil
@@ -166,8 +171,9 @@ class ViewController: UIViewController {
             }
         case self.tapSix:
             index = 5
+            let isEnded = timerSix != nil || timeLeftSix == 0
             timeLeftSix = 180
-            if timerSix != nil {
+            if isEnded {
                 self.clockSixLabel.text = timeLeftSix.formatToString()
                 timerSix?.invalidate()
                 timerSix = nil
